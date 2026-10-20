@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mera Tuition - Notes, exam updates and previous-year question papers for students.">
+  <title>Mera Tuition | Learn Better</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <span class="brand-icon">M</span>
+      <span>Mera Tuition<small>Learn. Practice. Succeed.</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home">Home</a>
+      <a href="#notifications">Updates</a>
+      <a href="#notes">Notes PDFs</a>
+      <a href="#pyqs">PYQs</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR LEARNING PARTNER</span>
+        <h1>Study smarter.<br><span>Succeed together.</span></h1>
+        <p>
+          Find study notes, important announcements and previous-year
+          question papers — all in one place.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#notes">Explore Notes</a>
+          <a class="button secondary" href="#pyqs">Find PYQs</a>
+        </div>
+        <div class="hero-points">
+          <span>✓ Class-wise resources</span>
+          <span>✓ Exam-wise papers</span>
+          <span>✓ Easy access</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="book-icon">📚</div>
+        <p class="card-label">YOUR STUDY SPACE</p>
+        <h2>Everything you need to prepare.</h2>
+        <div class="mini-resource">
+          <span>📄</span>
+          <div><strong>Study Notes</strong><small>Chapter-wise learning</small></div>
+        </div>
+        <div class="mini-resource">
+          <span>📝</span>
+          <div><strong>Question Papers</strong><small>Practice for exams</small></div>
+        </div>
+        <div class="mini-resource">
+          <span>🔔</span>
+          <div><strong>Latest Updates</strong><small>Stay informed</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="notifications">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">STAY INFORMED</span>
+          <h2>Notifications & Updates</h2>
+          <p>Important news and announcements from Mera Tuition.</p>
+        </div>
+        <span class="section-symbol">🔔</span>
+      </div>
+
+      <div class="notice-list" id="noticeList">
+        <article class="notice">
+          <span class="notice-tag">Welcome</span>
+          <h3>Welcome to Mera Tuition!</h3>
+          <p>Our online study resource centre is ready. Check back for new notes and question papers.</p>
+          <small>General announcement</small>
+        </article>
+        <article class="notice">
+          <span class="notice-tag">Study Tip</span>
+          <h3>Practise with previous-year papers</h3>
+          <p>Use the PYQ section to practise questions and prepare for your examinations.</p>
+          <small>Study reminder</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alternate" id="notes">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">LEARN AT YOUR PACE</span>
+          <h2>Notes & Study Materials</h2>
+          <p>Choose a class and subject to find your study resources.</p>
+        </div>
+        <span class="section-symbol">📚</span>
+      </div>
+
+      <div class="filters">
+        <label>
+          Select class
+          <select id="notesClass">
+            <option value="all">All Classes</option>
+            <option value="6">Class 6</option>
+            <option value="7">Class 7</option>
+            <option value="8">Class 8</option>
+            <option value="9">Class 9</option>
+            <option value="10">Class 10</option>
+            <option value="11">Class 11</option>
+            <option value="12">Class 12</option>
+          </select>
+        </label>
+        <label>
+          Select subject
+          <select id="notesSubject">
+            <option value="all">All Subjects</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="resource-grid" id="notesGrid">
+        <article class="resource-card" data-class="10" data-subject="mathematics">
+          <div class="resource-icon">📐</div>
+          <span class="resource-meta">CLASS 10 · MATHEMATICS</span>
+          <h3>Sample Mathematics Notes</h3>
+          <p><!-- Class 10 Mathematics notes -->
+<a class="resource-link"
+   href="pdfs/notes/class10-maths.pdf"
+   target="_blank" rel="noopener">
+  Open / Download PDF ↗
+</a></p>
+          <a class="resource-link" href="#" data-placeholder>PDF coming soon ↗</a>
+        </article>
+
+        <article class="resource-card" data-class="10" data-subject="science">
+          <div class="resource-icon">🔬</div>
+          <span class="resource-meta">CLASS 10 · SCIENCE</span>
+          <h3>Sample Science Notes</h3>
+          <p>
+
+
+<!-- Class 10 Science notes -->
+<a class="resource-link"
+   href="pdfs/notes/class10-science.pdf"
+   target="_blank" rel="noopener">
+  Open / Download PDF ↗
+</a>
+
+
+          <a class="resource-link" href="#" data-placeholder>PDF coming soon ↗</a>
+        </article>
+
+        <article class="resource-card" data-class="12" data-subject="physics">
+          <div class="resource-icon">⚡</div>
+          <span class="resource-meta">CLASS 12 · PHYSICS</span>
+          <h3>Sample Physics Notes</h3>
+          <p>Replace this sample with your physics notes PDF.</p>
+          <a class="resource-link" href="#" data-placeholder>PDF coming soon ↗</a>
+        </article>
+      </div>
+      <p class="empty-message" id="notesEmpty" hidden>No notes match your selection.</p>
+    </section>
+
+    <section class="section" id="pyqs">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">PRACTISE & PREPARE</span>
+          <h2>Previous-Year Questions</h2>
+          <p>Find question papers by class, subject and examination.</p>
+        </div>
+        <span class="section-symbol">📝</span>
+      </div>
+
+      <div class="filters">
+        <label>
+          Class
+          <select id="pyqClass">
+            <option value="all">All Classes</option>
+            <option value="6">Class 6</option>
+            <option value="7">Class 7</option>
+            <option value="8">Class 8</option>
+            <option value="9">Class 9</option>
+            <option value="10">Class 10</option>
+            <option value="11">Class 11</option>
+            <option value="12">Class 12</option>
+          </select>
+        </label>
+
+        <label>
+          Subject
+          <select id="pyqSubject">
+            <option value="all">All Subjects</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+          </select>
+        </label>
+
+        <label>
+          Examination
+          <select id="pyqExam">
+            <option value="all">All Examinations</option>
+            <option value="periodic">Periodic Test</option>
+            <option value="midterm">Mid-Term</option>
+            <option value="half-yearly">Half-Yearly</option>
+            <option value="annual">Annual Examination</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="resource-grid" id="pyqGrid">
+        <article class="resource-card" data-class="10"
+          data-subject="mathematics" data-exam="periodic">
+          <div class="resource-icon">📄</div>
+          <span class="resource-meta">CLASS 10 · MATHEMATICS</span>
+          <h3>Periodic Test Paper</h3>
+          <p><!-- Class 10 Mathematics periodic test -->
+<a class="resource-link"
+   href="pdfs/pyqs/class10-maths-periodic.pdf"
+   target="_blank" rel="noopener">
+  Open Question Paper ↗
+</a></p>
+          <a class="resource-link" href="#" data-placeholder>Paper coming soon ↗</a>
+        </article>
+
+        <article class="resource-card" data-class="10"
+          data-subject="mathematics" data-exam="half-yearly">
+          <div class="resource-icon">📑</div>
+          <span class="resource-meta">CLASS 10 · MATHEMATICS</span>
+          <h3>Half-Yearly Question Paper</h3>
+          <p><!-- Class 10 Mathematics half-yearly -->
+<a class="resource-link"
+   href="pdfs/pyqs/class10-maths-half-yearly.pdf"
+   target="_blank" rel="noopener">
+  Open Question Paper ↗
+</a></p>
+          <a class="resource-link" href="#" data-placeholder>Paper coming soon ↗</a>
+        </article>
+
+        <article class="resource-card" data-class="12"
+          data-subject="physics" data-exam="annual">
+          <div class="resource-icon">📘</div>
+          <span class="resource-meta">CLASS 12 · PHYSICS</span>
+          <h3>Annual Examination Paper</h3>
+          <p><!-- Class 12 Physics annual examination -->
+<a class="resource-link"
+   href="pdfs/pyqs/class12-physics-annual.pdf"
+   target="_blank" rel="noopener">
+  Open Question Paper ↗
+</a></p>
+          <a class="resource-link" href="#" data-placeholder>Paper coming soon ↗</a>
+        </article>
+      </div>
+      <p class="empty-message" id="pyqEmpty" hidden>No papers match your selection.</p>
+    </section>
+
+    <section class="callout">
+      <h2>Keep learning. Keep growing.</h2>
+      <p>Visit Mera Tuition regularly for new study resources and announcements.</p>
+      <a class="button light" href="#home">Back to Top ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-icon">M</span>
+      <span>Mera Tuition<small>Your learning partner</small></span>
+    </a>
+    <p>© <span id="year"></span> Mera Tuition. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
